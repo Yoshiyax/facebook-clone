@@ -1,0 +1,144 @@
+/* Variables de color para TheFacebook Original (2004) */
+:root {
+    --header-blue: #3b5998; /* Azul oscuro del encabezado */
+    --body-bg: #e6e7f2;    /* Fondo gris/blanco claro */
+    --main-border: #999;   /* Borde gris */
+    --link-blue: #3b5998;  /* Azul para enlaces */
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--body-bg);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 13px; /* Tamaño de fuente más pequeño para un look antiguo */
+}
+
+/* --- ENCABEZADO (BARRA AZUL OSCURA) --- */
+.header {
+    background-color: var(--header-blue);
+    color: white;
+    height: 90px; /* Altura considerable */
+    padding: 10px 0;
+    border-bottom: 1px solid #1d2a4e;
+    position: relative;
+}
+
+.header-content {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; /* Alinear contenido a la derecha */
+}
+
+.logo-text {
+    /* Estilo del texto [ thefacebook ] */
+    position: absolute;
+    top: 50px;
+    right: 50px; /* Posicionado manualmente para replicar la imagen */
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.container {
+    width: 900px; /* Ancho fijo como las webs antiguas */
+    margin: 20px auto;
+    display: flex; /* Para crear las dos columnas */
+    gap: 20px;
+}
+
+/* --- COLUMNA DE LOGIN (IZQUIERDA) --- */
+.left-sidebar {
+    width: 200px; /* Ancho fijo para el formulario de login */
+    padding: 10px;
+}
+
+.login-form-box {
+    background-color: #fff;
+    border: 1px solid var(--main-border);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.login-form-box label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-form-box input[type="text"],
+.login-form-box input[type="password"] {
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 2px 5px;
+    border: 1px solid var(--header-blue);
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #f7f7f7; /* Botones más claros */
+    color: var(--header-blue);
+}
+
+.btn-primary:hover {
+    background-color: #eee;
+}
+
+/* --- COLUMNA DE CONTENIDO (DERECHA) --- */
+.main-content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 15px 0;
+}
+
+.welcome-box {
+    background-color: white;
+    border: 1px solid var(--main-border);
+    padding: 20px;
+}
+
+.welcome-box h1 {
+    font-size: 1.8em;
+    color: var(--header-blue);
+    margin: 0 0 10px 0;
+}
+
+.welcome-box ul {
+    margin-left: -20px;
+}
+
+/* --- FOOTER --- */
+.footer {
+    width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.footer a {
+    color: var(--link-blue);
+    text-decoration: none;
+    margin: 0 5px;
+}
