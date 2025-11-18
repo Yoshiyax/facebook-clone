@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-define('DB_SERVER', 'sql103.infinityfree.com');
+define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'ifo_40443882');
 define('DB_PASSWORD', 'NfaTkyzm6yE5p');
 define('DB_NAME', 'ifo_40443882_thefacebook_clone');
