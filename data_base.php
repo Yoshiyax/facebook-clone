@@ -7,7 +7,7 @@ define('DB_USERNAME', 'ifo_40443882');
 define('DB_PASSWORD', 'NfaTkyzm6yE5p');
 define('DB_NAME', 'ifo_40443882_thefacebook_clone');
 
-$link = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+$link = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, 3306);
 
 
 if($link === false){
