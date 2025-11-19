@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bio = "¡Hola! Nuevo miembro de TheFacebook.";
 
     // --- 1. VALIDACIÓN EN SERVIDOR
-    $allowed_domains = ['uvg.edu.gt', 'url.edu.gt', 'ufm.edu.gt'];
+    $allowed_domains = ['uvg.edu.gt', 'url.edu.gt', 'umg.edu.gt', 'ufm.edu.gt'];
     $personal_domains = ['gmail.com', 'outlook.com', 'hotmail.com', 'yahoo.com', 'aol.com', 'icloud.com'];
     
     $domain = substr(strrchr($email, "@"), 1);

@@ -52,8 +52,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <div style="flex-shrink: 0;">
                         <img src="avatars/perfil.jpeg" 
                         alt="Avatar del Creador" 
-                        width="100" height="100" 
-                        style="display: block; border: 1px solid #999;">
+                        width="150" height="150" 
+                        style="display: block; border: 1px solid #999; object-fit:cover;">
                     </div>
                     <div>
                         <h3>Josué Hilario Yax García</h3>
